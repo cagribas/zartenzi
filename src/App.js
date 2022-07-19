@@ -66,14 +66,14 @@ export default function App() {
   return (
     <main className="main-container">
       {tenzies && <Confetti />}
-      <h1 className="title">Tenzies</h1>
+      <h1 className="title">Zartenzi</h1>
       <p className="instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
+        Tüm zarlar aynı olana kadar zar at. Tutmak istediğin zarı seç, ve tüm
+        zarlar aynı olana kadar devam et.
       </p>
       <div className="dice-container">{diceElements}</div>
       <button className="roll-dice" onClick={rollDice}>
-        {tenzies ? 'New Game' : 'Roll'}
+        {tenzies ? 'Yeni Oyun' : 'Zar At'}
       </button>
     </main>
   );
